@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-.flex-container {
+.flex-container-navBar {
     display: flex;
 }
 
@@ -19,7 +19,7 @@
     background-color: black;
 }
 
-ul {
+.navBar ul {
     display: flex;
     list-style-type: none;
     margin: 0;
@@ -29,7 +29,7 @@ ul {
     background-color: black;    
   }
   
-  li a {
+  .navBar li a {
     display: flex;
     color: white;
     text-align: center;
@@ -37,7 +37,7 @@ ul {
     text-decoration: none;
   }
 
-  li a:hover {
+  .navBar li a:hover {
     background-color: rgb(63, 63, 63);
   }
 
@@ -66,4 +66,14 @@ ul {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.flex-container-footer {
+  display: flex;
+  overflow: hidden;
+  background-color: black; 
+  color: white;
+  text-align: center;
+  padding: 15px 15px;
+  justify-content: space-evenly;
 }

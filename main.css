@@ -1,5 +1,8 @@
 * {
     box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
 }
 
 .flex-container-navBar {
@@ -68,12 +71,111 @@
     transform: translate(-50%, -50%);
 }
 
-.flex-container-footer {
+footer {
+  background-color: black;
+  color: #bbb;
+  list-style: none;
+  padding-left: 0;
+  line-height: 1;
+}
+
+footer a {
+  text-decoration: none;
+  color:#eee;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.ft-title {
+  color: #fff;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.2rem;
+  padding-bottom: 0.625rem;
+}
+
+body {
   display: flex;
-  overflow: hidden;
-  background-color: black; 
-  color: white;
-  text-align: center;
-  padding: 15px 15px;
-  justify-content: space-evenly;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.container {
+  flex: 1;
+}
+
+/* Footer main */
+.ft-main {
+  padding: 1.25rem 1.875rem;
+  display: flex;
+  flex-wrap: wrap;
+  color: rgb(100, 99, 99)
+}
+
+@media only screen and (min-width: 29.8125rem /* 477px */) {
+  .ft-main {
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (min-width: 77.5rem /* 1240px */) {
+  .ft-main {
+    justify-content: space-evenly;
+  }
+}
+
+.ft-main-item {
+  padding: 1.25rem;
+  min-width: 12.5rem;
+}
+
+.ft-main-item h2 {
+  color: rgb(167, 166, 166);
+  text-decoration: underline;
+}
+
+.ft-main-item li a {
+  color: rgb(128, 126, 126);
+  line-height: 1.5;
+}
+
+.ft-main-item ul {
+  list-style-type: none;
+}
+
+/* Footer social */
+.ft-social {
+  padding: 0 1.875rem 1.25rem;
+}
+.ft-social-list {
+  display: flex;
+  justify-content: center;
+  border-top: 1px #777 solid;
+  padding-top: 1.25rem;
+}
+.ft-social-list li {
+  margin: 0.5rem;
+  font-size: 1.25rem;
+}
+
+/* Footer legal */
+.ft-legal {
+  padding: 0.9375rem 1.875rem;
+  background-color: black;
+}
+.ft-legal-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.ft-legal-list li {
+  margin: 0.125rem 0.625rem;
+  white-space: nowrap;
+  list-style-type: none;
+}
+
+/* one before the last child */
+.ft-legal-list li:nth-last-child(2) {
+    flex: 1;
 }

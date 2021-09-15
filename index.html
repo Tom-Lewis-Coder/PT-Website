@@ -2,21 +2,28 @@
 <html lang='en'>
 
 <head>
+    <script src="https://use.fontawesome.com/69c33f4e03.js"></script>
     <title>TSL Fitness - Personal Training in and around London</title>
     <link rel='stylesheet' href='main.css'>
 </head>
 
 <body>
+
     <header>
-        <div class='flex-container-navBar'>
-            <div class='left-nav'><a>TSL Fitness</a></div>
-            <div class='right-nav'><a>Home</a></div>
-            <div class='right-nav'><a>About</a></div>
-            <div class='right-nav'><a>Services</a></div>
-            <div class='right-nav'><a>Blog</a></div>
-            <div class='right-nav'><a>Recipes</a></div>
-            <div class='right-nav'><a>Contact</a></div>
-        </div>
+        <nav class='navbar'>
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i class="fa fa-bars"></i>
+            </span>
+            <a href='#' class='logo'>TSL Fitness</a>
+            <ul class='main-nav' id='js-menu'>
+                <li><a class='nav-links' href="#">Home</a></li>
+                <li><a class='nav-links' href="#">About</a></li>
+                <li><a class='nav-links' href="#">Services</a></li>
+                <li><a class='nav-links' href="#">Blog</a></li>
+                <li><a class='nav-links' href="#">Recipes</a></li>
+                <li><a class='nav-links' href="#">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -24,10 +31,10 @@
             <div class='column'>
                 <img src='TSLimg.jpg' alt='gym' style='width: 100%'>
             </div>
-            <div class='overlay'>
+            <!--<div class='overlay'> 
                 <h1 class='text-overlay'>Personal Training</h1>
                 <h2 class='text-overlay2'>London</h2> 
-            </div>                                  
+            </div>-->                                  
             <div class='column'>
                 <img src='TSLimg2.jpg' alt='run' style='width: 100%'>
             </div>
@@ -62,11 +69,11 @@
 
         <section class="ft-social">
             <ul class="ft-social-list">
-              <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-              <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-              <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="#"><i class="fa fa-youtube"></i></a></li>
             </ul>
           </section>
 
@@ -81,5 +88,7 @@
     </footer>
 
 </body>
+
+<script src='main.js'></script>
 
 </html>

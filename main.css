@@ -129,7 +129,7 @@ header {
 }
 
 .about-img {
-  margin: 40px 20px 0 40px;
+  margin: 60px 20px 0 40px;
   height: 200px;
   min-width: 150px;
   border: 3px solid white;
@@ -141,7 +141,7 @@ header {
 }
 
 .about-para {
-  margin: 40px;
+  margin: 60px 20px 60px 20px;
   color: white;
 }
 
@@ -157,7 +157,7 @@ header {
 } 
 
 .signUp h2 {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .signUp:after {
@@ -180,7 +180,7 @@ header {
   display: inline-block;
   border-radius: 20px;
   font-size: 16px;
-  margin: 10px 2px 20px 2px;
+  margin: 10px 2px 40px 2px;
   cursor: pointer;
 }
 
@@ -200,12 +200,12 @@ header {
   }
 
   .about-img {
-    margin: 60px 60px 60px 150px;
+    margin: 120px 60px 120px 120px;
     width: 450px;
   }
 
   .about-para {
-    margin: 60px 75px 60px 60px;
+    margin: 120px 120px 120px 60px;
   }
 
 }

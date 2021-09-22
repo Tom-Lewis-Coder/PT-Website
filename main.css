@@ -21,10 +21,6 @@ header {
   width: 100%;
 }
 
-.main-nav {
-  list-style-type: none;
-}
-
 .nav-links, .logo {
   text-decoration: none;
   color: white;
@@ -61,51 +57,9 @@ header {
   display: block;
 }
 
-@media screen and (min-width: 768px) {
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 0;
-    height: 60px;
-    align-items: center;
-    border-bottom: 4px solid white;
-  }
-
-  .main-nav {
-    display: flex;
-    margin-right: 20px;
-    flex-direction: row;
-    justify-content: flex-end;
-  }
-
-  .main-nav li {
-    margin: 0;
-  }
-
-  .nav-links {
-    margin-left: 15px;
-    font-size: 17px;
-    padding: 10px;
-    border-radius: 2px;
-  }
-
-  .logo {
-    margin-top: 0;
-    font-size: 25px;
-  }
-
-  .navbar-toggle {
-    display: none;
-  }
-
-  .nav-links:hover {
-    background-color: rgba(37, 37, 37);
-  }
-}
-
   /* Main */
 
-.img-container-row {
+.img-container {
   display: flex;
   flex-direction: column;
 }
@@ -178,40 +132,10 @@ header {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  border-radius: 20px;
+  border-radius: 25px;
   font-size: 16px;
   margin: 10px 2px 35px 2px;
   cursor: pointer;
-}
-
-@media screen and (min-width: 768px) {
-  .img-container-row {
-    flex-direction: row;
-  }
-
-  .column {
-    flex: 49%;
-    padding: 1px;
-  }
-
-  .overlay-text {
-    margin-top: 75px;
-    font-size: 40px;
-  }
-
-  .about-img {
-    margin: 120px 60px 120px 120px;
-    width: 450px;
-  }
-
-  .about-para {
-    margin: 120px 120px 120px 60px;
-  }
-
-  .signUp:after {
-    width: 96%;
-  }
-
 }
 
 /* Footer */
@@ -252,22 +176,6 @@ footer a:hover {
   flex-direction: column;
   text-align: center;
   flex-wrap: wrap;
-  color: rgb(100, 99, 99)
-}
-
-@media only screen and (min-width: 29.8125rem /* 477px */) {
-  .ft-main {
-    justify-content: space-evenly;
-    text-align: center;
-  }
-}
-
-@media only screen and (min-width: 77.5rem /* 1240px */) {
-  .ft-main {
-    justify-content: space-evenly;
-    flex-direction: row;
-    text-align: left;
-  }
 }
 
 .ft-main-item {
@@ -276,12 +184,12 @@ footer a:hover {
 }
 
 .ft-main-item h2 {
-  color: rgb(202, 199, 199);
+  color: rgb(200, 200, 200);
   text-decoration: underline;
 }
 
 .ft-main-item li a {
-  color: rgb(153, 151, 151);
+  color: rgb(170, 170, 170);
   line-height: 1.5;
 }
 
@@ -332,4 +240,120 @@ footer a:hover {
 
 .ft-legal-list li:nth-last-child(2) {
     flex: 1;
+}
+
+/* navbar tablet and up */
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 60px;
+    align-items: center;
+    border-bottom: 4px solid white;
+  }
+
+  .main-nav {
+    display: flex;
+    margin-right: 20px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .main-nav li {
+    margin: 0;
+  }
+
+  .nav-links {
+    margin-left: 5px;
+    font-size: 17px;
+    padding: 10px;
+    border-radius: 2px;
+  }
+
+  .logo {
+    margin-top: 0;
+    font-size: 25px;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .nav-links:hover {
+    background-color: rgba(37, 37, 37);
+  }
+}
+
+/* body little less than tablet size and up */
+
+@media screen and (min-width: 700px) {
+  .overlay-text {
+    top: 45%;
+    font-size: 20px;
+  }
+}
+
+/* body tablet */
+
+@media screen and (min-width: 940px) {
+  .overlay-text {
+    top: 45%;
+    font-size: 30px;
+  }
+}
+
+/* body small laptop screen */
+
+@media screen and (min-width: 1000px) {
+  .img-container {
+    flex-direction: row;
+  }
+
+  .column {
+    flex: 49%;
+    padding: 1px;
+  }
+
+  .about-img {
+    margin: 75px 60px 75px 75px;
+    width: 450px;
+  }
+
+  .about-para {
+    margin: 75px 75px 75px 60px;
+  }
+
+  .signUp:after {
+    width: 96%;
+  }
+}
+
+/* body full */
+
+@media screen and (min-width: 1280px) {
+  .overlay-text {
+    top: 45%;
+    font-size: 35px;
+  }
+
+  .about-img {
+    margin: 120px 60px 120px 120px;
+    width: 450px;
+  }
+
+  .about-para {
+    margin: 120px 120px 120px 60px;
+  }
+}
+
+/* footer tablet and up */
+
+@media screen and (min-width: 768px) {
+  .ft-main {
+    justify-content: space-evenly;
+    flex-direction: row;
+    text-align: left;
+  }
 }
